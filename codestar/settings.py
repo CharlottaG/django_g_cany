@@ -28,9 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['8000-charlottag-django-g-cany-vzcrgmf4nx.us1.codeanyapp.com', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-charlottag-django-g-cany-g646edtf04.us1.codeanyapp.com', '.herokuapp.com']
 
 
 # Application definition
@@ -89,6 +89,7 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
